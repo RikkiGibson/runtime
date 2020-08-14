@@ -27,6 +27,7 @@ namespace System.Data
             {
                 SubscribeEvents();
             }
+            System.Diagnostics.Debug.Assert(_currentDataTable is object);
         }
 
         internal void CleanUp() => UnSubscribeEvents();
